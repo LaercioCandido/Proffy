@@ -6,14 +6,14 @@ import { RectButton } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
 
 function GiveClasses() {
-	const [ goBack ] = useNavigation();
+	const { goBack } = useNavigation();
 
 	function handleNavigateBack() {
 		goBack();
 	}
 
 	return (
-		<View styles={styles.container} >
+		<View style={styles.container} >
 			<ImageBackground
 				resizeMode="contain"
 				source={ giveClassesBgImage }
