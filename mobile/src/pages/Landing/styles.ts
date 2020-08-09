@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
 	banner: {
 		width: '100%',
 		resizeMode: 'contain',
+		marginTop: 20,
 	},
 
 	title: {
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
 		color: '#FFF',
 		fontSize: 20,
 		lineHeight: 30,
-		marginTop: 80,
+		marginTop: 30,
 	},
 
 	titleBold: {
