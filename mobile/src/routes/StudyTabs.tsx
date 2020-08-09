@@ -1,56 +1,52 @@
-import React from 'react'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import TeacherList from '../pages/TeacherList'
-import Favorites from '../pages/Favorites'
-import { Ionicons } from '@expo/vector-icons'
+import React from 'react';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { Ionicons } from '@expo/vector-icons';
+
+import TeacherList from '../pages/TeacherList';
+import Favorites from '../pages/Favorites';
+
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
-function StudyTabs(){
+function StudyTabs() {
 	return (
 		<Navigator
-
 			tabBarOptions={{
 				style: {
 					elevation: 0,
 					shadowOpacity: 0,
-					height: 64,
+					height: 64
 				},
-
-				tabStyle:{
+				tabStyle: {
 					flexDirection: 'row',
 					alignItems: 'center',
-					justifyContent: 'center'
+					justifyContent: 'center',
 				},
-
 				iconStyle: {
 					flex: 0,
 					width: 20,
-					height: 20
+					height: 20,
 				},
-
-				labelStyle:{
+				labelStyle: {
 					fontFamily: 'Archivo_700Bold',
 					fontSize: 13,
 					marginLeft: 16,
 				},
-
 				inactiveBackgroundColor: '#fafafc',
 				activeBackgroundColor: '#ebebf5',
 				inactiveTintColor: '#c1bccc',
 				activeTintColor: '#32264d'
 			}}
-
 		>
 			<Screen
 				name="TeacherList"
 				component={TeacherList}
 				options={{
 					tabBarLabel: 'Proffys',
-					tabBarIcon: ({ color, size, focused }) =>{
+					tabBarIcon: ({ color, size, focused }) => {
 						return (
-							<Ionicons name="ios-easel" size={size} color={focused ? '#8257E5': color}/>
-						)
+							<Ionicons name="ios-easel" size={size} color={focused ? '#8257e5' : color}/>
+						);
 					}
 				}}
 			/>
@@ -59,15 +55,16 @@ function StudyTabs(){
 				component={Favorites}
 				options={{
 					tabBarLabel: 'Favoritos',
-					tabBarIcon: ({ color, size, focused }) =>{
+					tabBarIcon: ({ color, size, focused }) => {
 						return (
-							<Ionicons name="ios-heart" size={size} color={focused ? '#8257E5': color}/>
-						)
+							<Ionicons name="ios-heart" size={size} color={focused ? '#8257e5' : color}/>
+						);
 					}
 				}}
 			/>
 		</Navigator>
-	)
+	);
 }
 
-export default StudyTabs
+export default StudyTabs;
+
