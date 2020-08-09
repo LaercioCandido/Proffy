@@ -13,12 +13,20 @@ const styles = StyleSheet.create ({
 		justifyContent: 'center'
 	},
 
+	titleContainer: {
+		alignItems: 'center',
+	},
+
 	title: {
 		fontFamily: 'Archivo_700Bold',
 		color: '#FFF',
 		fontSize: 32,
 		lineHeight: 37,
 		maxWidth: 180,
+	},
+
+	descriptionContainer: {
+		alignItems: 'center',
 	},
 
 	description: {

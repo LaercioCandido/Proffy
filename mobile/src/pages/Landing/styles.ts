@@ -1,5 +1,7 @@
 import { StyleSheet } from 'react-native';
 
+const primaryColor = '#8257e5'
+
 const styles = StyleSheet.create ({
 	container: {
 		flex: 1,
@@ -11,6 +13,10 @@ const styles = StyleSheet.create ({
 	banner: {
 		width: '100%',
 		resizeMode: 'contain'
+	},
+
+	titleContainer: {
+		alignItems: 'center'
 	},
 
 	title: {
@@ -48,10 +54,18 @@ const styles = StyleSheet.create ({
 		backgroundColor: '#04d361'
 	},
 
+	buttonsTextContainer: {
+		alignItems: 'center',
+	},
+
 	buttonText: {
 		fontFamily: 'Archivo_700Bold',
 		color: '#FFF',
 		fontSize: 20,
+	},
+
+	connectionsContainer: {
+		alignItems: 'center',
 	},
 
 	totalConnections: {
