@@ -27,20 +27,7 @@ Dependencies:
  # Clone repository into your machine 
  $ git clone https://github.com/LaercioCandido/Proffy.git 
  ```
-### Running project on a web browser  
-
-**Front-end**
-```
-# Go to project's web folder
-$ cd web
-
-# Install dependencies
-$ yarn install or npm install
-
-# Run application
-$ yarn start or npm run start
-```
-Front-end available at http://localhost:3000/.
+### Run Web Project  
 
 **Back-end**
 ```
@@ -56,9 +43,24 @@ $ yarn start or npm run start
 # Make migrations
 $ yarn knex:migrate
 ```
-API available to be tested on http://localhost:3333/.
+Access API at http://localhost:3333/
 
-### Running project on mobile
+**Front-end**
+```
+# Go to project's web folder
+$ cd web
+
+# Install dependencies
+$ yarn install or npm install
+
+# Run application
+$ yarn start or npm run start
+```
+Access http://localhost:3000/ 
+
+
+
+### Run Mobile Project
 To run the project on mobile you need a cellphone with the expo app instaled or an android/ios emulator.
 ```
 # Go to project's mobile folder
@@ -70,3 +72,4 @@ $ yarn install  or npm install
 # Run application
 $ yarn start or npm run start
 ```
+After read the QR Code with the expo app or run on emulator.
