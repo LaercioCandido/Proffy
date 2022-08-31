@@ -1,7 +1,7 @@
 # **Proffy**
 Project made to connect students to teachers.
 
-(https://github.com/LaercioCandido/LaercioCandido/blob/main/proffy.png)
+![proffy](https://github.com/LaercioCandido/LaercioCandido/blob/main/proffy.png)
 
 
 ## Tecnologies
