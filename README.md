@@ -26,6 +26,9 @@ Dependencies:
 ``` 
  # Clone repository into your machine 
  $ git clone https://github.com/LaercioCandido/Proffy.git 
+ 
+ # Go to project's server fold
+ $ cd Proffy
  ```
 ### Run Web Project  
 
